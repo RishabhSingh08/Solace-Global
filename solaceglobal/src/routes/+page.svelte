@@ -129,7 +129,7 @@
             <div class="my-16 border-t-2"></div>
 
             <!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
-            <div>
+            <div class="mb-16">
                 <div class="mb-16">
                     <p class="text-4xl ">Foundation Facts</p>
                 </div>
@@ -140,11 +140,27 @@
                     <div><div>11+</div> <p class="mt-2 text-base">Programs</p> </div>
                 </div>
             </div>
-
-            <footer>
-                
+            <footer class="p-8 border-t grid grid-cols-3 gap-8">
+                    <div >
+                        <img class="items-center w-32" src={Icon} alt="Logo">
+                    </div>
+                    <div>
+                        <p class="text-[1rem]">We are a nonprofit fighting poverty and inequity around the world.</p>
+                    </div>
+                    <div class="flex justify-end gap-8 items-center text-2xl">
+                        <button aria-label="Tiktok">
+                            <a href="https://www.tiktok.com/@solaceglobalnpo" target="_blank" aria-label="Tiktok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </button>
+                        <button aria-label="Instagram">
+                            <a href="https://www.instagram.com/solaceglobalnpo/" target="_blank" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </button>                    
+                    </div>
             </footer>
-        <!-- End of Content Div -->
+            <!-- End of Content Div -->
         </div>
         <div class="flex-grow"></div>
     </div>
