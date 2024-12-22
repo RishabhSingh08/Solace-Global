@@ -1,6 +1,7 @@
 <script>
     import Icon from "../lib/images/SolaceGlobalLogo.png";
-      import Video from "../lib/images/ActualActualFinalVideo.mp4";
+    import Video from "../lib/images/ActualActualFinalVideo.mp4";
+    import ArticleImage from "../lib/images/article1.png";
 
 </script>
 
@@ -19,13 +20,13 @@
                     </div>
                     <!-- Links -->
                     <div class="flex justify-center space-x-8">
-                        <a href="#" class="text-lg font-medium hover:text-black hover:underline">About Us</a>
-                        <a href="#" class="text-lg font-medium hover:text-black hover:underline">Our Work</a>
-                        <a href="#" class="text-lg font-medium hover:text-black hover:underline">Ideas</a>
+                        <a href="/" class="text-lg font-medium hover:text-black hover:underline">About Us</a>
+                        <a href="/" class="text-lg font-medium hover:text-black hover:underline">Our Work</a>
+                        <a href="/" class="text-lg font-medium hover:text-black hover:underline">Ideas</a>
                     </div>
                     <!-- Donate -->
                     <div class="flex justify-end">
-                        <a href="#" class="text-lg hover:text-black hover:underline">Donate</a>
+                        <a href="/" class="text-lg hover:text-black hover:underline">Donate</a>
                     </div>
                 </div>
             </nav>
@@ -54,7 +55,19 @@
                     </a>
                 </p>
             </div>
-            <div>
+            <!-- Featured Insights - article names - chess is a catalyst for knowledge, how ai effects education, robotics, climate change  -->
+            <div class="mt-12">
+                <div>
+                    <p class="text-3xl font-medium">
+                        Featured Insights
+                    </p>
+                </div>
+                <div class="grid grid-cols-4 gap-4 mt-12 ">
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div><span class="font-bold">Article</span> Chess is a Catalyst for Knowledge</div></div>
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div><span class="font-bold">Article</span> How AI Effects Education</div></div>
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div><span class="font-bold">Article</span> Robotics</div></div>
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div ><span class="font-bold">Article</span> Climate Change</div></div>
+                </div>
             </div>
             
         <!-- End of Content Div -->
@@ -65,7 +78,6 @@
 
 
 
-<!-- Featured Insights - article names - chess is a catalyst for knowledge, how ai effects education, robotics, climate change  -->
 <!-- Partners of Solace Global- has text - How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things. -->
 <!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
 <!-- Perspectives- Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter. -->
