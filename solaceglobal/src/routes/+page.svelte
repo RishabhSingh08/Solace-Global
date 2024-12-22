@@ -156,7 +156,7 @@
 
             <!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
             <div class="mb-16">
-                <div class="mb-16">
+                <div class="mb-8">
                     <p class="text-4xl rasa">Foundation Facts</p>
                 </div>
                 <div class="grid grid-cols-4 gap-8 text-center text-7xl">
