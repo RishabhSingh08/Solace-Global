@@ -59,17 +59,17 @@
                 </p>
             </div>
             <!-- Featured Insights - article names - chess is a catalyst for knowledge, how ai effects education, robotics, climate change  -->
-            <div class="mt-12">
+            <div class="mt-20">
                 <div>
                     <p class="text-3xl font-medium">
                         Featured Insights
                     </p>
                 </div>
                 <div class="grid grid-cols-4 gap-4 mt-12">
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Chess is a Catalyst for Knowledge</div></div>
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> How AI Effects Education</div></div>
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Robotics</div></div>
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Climate Change</div></div>
+                    <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Chess is a Catalyst for Knowledge</div></div>
+                    <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> How AI Effects Education</div></div>
+                    <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Robotics</div></div>
+                    <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Climate Change</div></div>
                 </div>
             </div>
             
@@ -103,35 +103,47 @@
                 <div class="col-span-3">
                     <img src={ArticleImage} alt="Article" class="">
                     <div class="mt-6">
-                        <p class="mb-3 font-semibold">Lorem ipsum dolor sit amet, consectetur</p>
+                        <p class="mb-3 font-semibold text-2xl">Lorem ipsum dolor sit amet, consectetur</p>
                         <p class="text-sm">Nullam et pellentesque turpis. Fusce et feugiat augue. Donec interdum lorem libero, non pellentesque ante porta et. </p>
                     </div>
                 </div>
-
+                <!-- Learn More Perspectives top right button- BLACK PAGE Latest update on importance issues offering diverse insights around the world, image with quote - Knowledge is the light that guides us through the darkness., under image - title - Unlocking true understanding through knowledge and impartiality. Next to image have newsletter subscription, 10 articles not on main page under image and newsletter. Videos under not on main page, under that have another sign up for newsletter(Subscribe to the The Wisdom), Partners again, -->
                 <div class="col-span-2">
                     <div>
                         <img src={ArticleImage} alt="Article" class="w-96">
-                        <p class="mt-3 font-semibold">Lorem ipsum dolor sit amet, consectetur</p>
+                        <p class="mt-3 font-semibold text-  xl">Lorem ipsum dolor sit amet, consectetur</p>
                     </div>
-                    <div class="mt-20 bg-neutral-500 text-black p-8 rounded-sm" >
+                    <div class="mt-10 bg-neutral-500 text-black p-8 rounded-sm" >
                         <p class="mb-2">
                             Subscribe to The Solace Global Newsletter to get weekly updates.
                         </p>
                         <form>
                             <label for="email" class="text-sm font-thin">Email Address</label>
                             <input type="email" name="email" id="email" autocomplete="email" required class=" w-full rounded-md bg-white px-3 py-1 text-base text-gray-900 focus:outline-2 focus:outline-slate-400">
-                            <button type="submit" class="mt-6 justify-center rounded-md bg-gray-800 px-6 py-3 font-semibold text-white hover:bg-black">Subscribe</button>
+                            <button type="submit" class="transition mt-6 justify-center rounded-md bg-gray-800 px-6 py-3 font-semibold text-white hover:bg-black">Subscribe</button>
                         </form>
                     </div>
                 </div>
-
-
-
             </div>
             </div>
+            <div class="my-16 border-t-2"></div>
 
+            <!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
+            <div>
+                <div class="mb-16">
+                    <p class="text-4xl ">Foundation Facts</p>
+                </div>
+                <div class="grid grid-cols-4 gap-8 text-center text-6xl">
+                    <div><div>6650+</div> <p class="mt-2 text-base">People affected</p> </div>
+                    <div><div>$3400+</div> <p class="mt-2 text-base">Amount raised</p> </div>
+                    <div><div>50+</div> <p class="mt-2 text-base">Volunteers</p> </div>
+                    <div><div>11+</div> <p class="mt-2 text-base">Programs</p> </div>
+                </div>
+            </div>
 
-
+            <footer>
+                
+            </footer>
         <!-- End of Content Div -->
         </div>
         <div class="flex-grow"></div>
@@ -140,5 +152,3 @@
 
 
 
-<!-- Learn More Perspectives top right button- BLACK PAGE Latest update on importance issues offering diverse insights around the world, image with quote - Knowledge is the light that guides us through the darkness., under image - title - Unlocking true understanding through knowledge and impartiality. Next to image have newsletter subscription, 10 articles not on main page under image and newsletter. Videos under not on main page, under that have another sign up for newsletter(Subscribe to the The Wisdom), Partners again, -->
-<!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
