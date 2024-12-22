@@ -1,13 +1,26 @@
+
 <script>
     import Icon from "../lib/images/SolaceGlobalLogo.png";
     import Video from "../lib/images/ActualActualFinalVideo.mp4";
     import ArticleImage from "../lib/images/article1.png";
     import PartnersImage from "../lib/images/PartnersImage.png";
     import '@fortawesome/fontawesome-free/css/all.min.css'
-
-
 </script>
 
+<svelte:head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+</svelte:head>
+
+<style>
+.rasa {
+  font-family: "Rasa", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+</style>
 <main>
     <div class="flex h-full">
         <div class="flex-grow"></div>
@@ -36,7 +49,7 @@
             <!-- Hero Div -->
             <div class="mt-16 px-8">
                 <!-- Slogan- Unite to create a future of lasting value -->
-                <h1 class="text-6xl  font-medium w-[800px] leading-[4.5rem] ">
+                <h1 class="text-7xl w-[800px] leading-[4.5rem] rasa ">
                     Unite to create a future of lasting value
                 </h1>
                 <!-- Hyperlinked Text under slogan- Learn about empowerment and innovation to create lasting change for tomorrow. -->
@@ -61,7 +74,7 @@
             <!-- Featured Insights - article names - chess is a catalyst for knowledge, how ai effects education, robotics, climate change  -->
             <div class="mt-20">
                 <div>
-                    <p class="text-3xl font-medium">
+                    <p class="text-4xl rasa">
                         Featured Insights
                     </p>
                 </div>
@@ -92,7 +105,7 @@
             <!-- Perspectives- Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter. -->
             <div class="bg-zinc-900 px-32 py-16 text-white mt-20">
                 <div class="grid grid-cols-2 justify-between items-center">
-                    <p class="flex justify-start font-medium text-4xl">Perspectives</p>
+                    <p class="flex justify-start font-medium text-5xl rasa">Perspectives</p>
                     <div class="flex justify-end items-center text-xs font-medium">
                         <p class="underline ">Learn More About Perspectives</p>
                     </div>
@@ -103,7 +116,7 @@
                 <div class="col-span-3">
                     <img src={ArticleImage} alt="Article" class="">
                     <div class="mt-6">
-                        <p class="mb-3 font-semibold text-2xl">Lorem ipsum dolor sit amet, consectetur</p>
+                        <p class="mb-3 font-semibold text-2xl rasa">Lorem ipsum dolor sit amet, consectetur</p>
                         <p class="text-sm">Nullam et pellentesque turpis. Fusce et feugiat augue. Donec interdum lorem libero, non pellentesque ante porta et. </p>
                     </div>
                 </div>
@@ -111,10 +124,10 @@
                 <div class="col-span-2">
                     <div>
                         <img src={ArticleImage} alt="Article" class="w-96">
-                        <p class="mt-3 font-semibold text-  xl">Lorem ipsum dolor sit amet, consectetur</p>
+                        <p class="mt-3 font-semibold text-2xl rasa">Lorem ipsum dolor sit amet, consectetur</p>
                     </div>
                     <div class="mt-10 bg-neutral-500 text-black p-8 rounded-sm" >
-                        <p class="mb-2">
+                        <p class="mb-2 rasa">
                             Subscribe to The Solace Global Newsletter to get weekly updates.
                         </p>
                         <form>
@@ -131,13 +144,13 @@
             <!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
             <div class="mb-16">
                 <div class="mb-16">
-                    <p class="text-4xl ">Foundation Facts</p>
+                    <p class="text-4xl rasa">Foundation Facts</p>
                 </div>
-                <div class="grid grid-cols-4 gap-8 text-center text-6xl">
-                    <div><div>6650+</div> <p class="mt-2 text-base">People affected</p> </div>
-                    <div><div>$3400+</div> <p class="mt-2 text-base">Amount raised</p> </div>
-                    <div><div>50+</div> <p class="mt-2 text-base">Volunteers</p> </div>
-                    <div><div>11+</div> <p class="mt-2 text-base">Programs</p> </div>
+                <div class="grid grid-cols-4 gap-8 text-center text-7xl">
+                    <div><div class="rasa">6650+</div> <p class="mt text-base">People affected</p> </div>
+                    <div><div class="rasa">$3400+</div> <p class="mt text-base">Amount raised</p> </div>
+                    <div><div class="rasa">50+</div> <p class="mt text-base">Volunteers</p> </div>
+                    <div><div class="rasa">11+</div> <p class="mt text-base">Programs</p> </div>
                 </div>
             </div>
             <footer class="p-8 border-t grid grid-cols-3 gap-8">
