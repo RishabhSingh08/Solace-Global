@@ -2,6 +2,8 @@
     import Icon from "../lib/images/SolaceGlobalLogo.png";
     import Video from "../lib/images/ActualActualFinalVideo.mp4";
     import ArticleImage from "../lib/images/article1.png";
+    import PartnersImage from "../lib/images/PartnersImage.png";
+
 
 </script>
 
@@ -62,14 +64,26 @@
                         Featured Insights
                     </p>
                 </div>
-                <div class="grid grid-cols-4 gap-4 mt-12 ">
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div><span class="font-bold">Article</span> Chess is a Catalyst for Knowledge</div></div>
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div><span class="font-bold">Article</span> How AI Effects Education</div></div>
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div><span class="font-bold">Article</span> Robotics</div></div>
-                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div ><span class="font-bold">Article</span> Climate Change</div></div>
+                <div class="grid grid-cols-4 gap-4 mt-12">
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Chess is a Catalyst for Knowledge</div></div>
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> How AI Effects Education</div></div>
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Robotics</div></div>
+                    <div class="w-64 hover:underline"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Climate Change</div></div>
                 </div>
             </div>
             
+            
+            <div class="my-16 border-t-2"></div>
+
+        <!-- Partners of Solace Global- has text - How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things. -->
+            <div class="grid grid-cols-3">
+                <div class="col-span-2">
+                    <img src={PartnersImage} alt="Partners" class="">
+                </div>
+                <div class="">
+                    <p class="text-3xl py-8  text-center">Partners of Solace Global</p>
+                </div>
+            </div>
         <!-- End of Content Div -->
         </div>
         <div class="flex-grow"></div>
@@ -78,7 +92,6 @@
 
 
 
-<!-- Partners of Solace Global- has text - How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things. -->
 <!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
 <!-- Perspectives- Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter. -->
 <!-- Learn More Perspectives top right button- BLACK PAGE Latest update on importance issues offering diverse insights around the world, image with quote - Knowledge is the light that guides us through the darkness., under image - title - Unlocking true understanding through knowledge and impartiality. Next to image have newsletter subscription, 10 articles not on main page under image and newsletter. Videos under not on main page, under that have another sign up for newsletter(Subscribe to the The Wisdom), Partners again, -->
