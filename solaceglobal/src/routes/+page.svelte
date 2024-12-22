@@ -1,5 +1,7 @@
 <script>
     import Icon from "../lib/images/SolaceGlobalLogo.png";
+      import Video from "../lib/images/ActualActualFinalVideo.mp4";
+
 </script>
 
 <main>
@@ -40,7 +42,22 @@
                     </a>
                 </p>
             </div>
+            <!-- Video- 3 frame video  -->
+            <div class="mt-20">
+                <video loop muted autoplay poster={Icon} width="1920">
+                    <source src={Video} type="video/mp4">
+                </video>
+                    <!-- Hyperlink Text under video- Discover Solace Globals Philanthropy  to explore giving opportunities and make an impact. -->
+                <p class="mt-5 text-md font-medium underline px-8">
+                    <a href="/">
+                        Discover Solace Globals Philanthropy to explore giving opportunities and make an impact
+                    </a>
+                </p>
+            </div>
+            <div>
+            </div>
             
+        <!-- End of Content Div -->
         </div>
         <div class="flex-grow"></div>
     </div>
@@ -48,8 +65,6 @@
 
 
 
-<!-- Video- 3 frame video  -->
-<!-- Hyperlink Text under video- Discover Solace Globals Philanthropy  to explore giving opportunities and make an impact. -->
 <!-- Featured Insights - article names - chess is a catalyst for knowledge, how ai effects education, robotics, climate change  -->
 <!-- Partners of Solace Global- has text - How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things. -->
 <!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
