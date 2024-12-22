@@ -141,8 +141,10 @@
                 </div>
             </div>
             <footer class="p-8 border-t grid grid-cols-3 gap-8">
-                    <div >
-                        <img class="items-center w-32" src={Icon} alt="Logo">
+                    <div>
+                        <a href="/">
+                            <img href="" class="items-center w-32" src={Icon} alt="Logo">
+                        </a>
                     </div>
                     <div>
                         <p class="text-[1rem]">We are a nonprofit fighting poverty and inequity around the world.</p>
