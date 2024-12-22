@@ -76,13 +76,16 @@
             <div class="my-16 border-t-2"></div>
 
         <!-- Partners of Solace Global- has text - How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things. -->
-            <div class="grid grid-cols-3">
-                <div class="col-span-2">
+            <div class="grid grid-cols-5">
+                <div class="col-span-3">
                     <img src={PartnersImage} alt="Partners" class="">
                 </div>
-                <div class="">
-                    <p class="text-3xl py-8  text-center">Partners of Solace Global</p>
+                <div class="col-span-2">
+                    <p class="text-3xl px-8 my-3">Partners of Solace Global</p>
+                    <p class="px-8 mt-7">How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things.</p>
+                    <button class="mt-12 ml-8 transition border-2 border-black text-black py-3 px-9 rounded hover:text-white hover:bg-stone-800 hover:border-stone-800">Learn More</button>
                 </div>
+                
             </div>
         <!-- End of Content Div -->
         </div>
