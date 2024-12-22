@@ -8,9 +8,9 @@
 </script>
 
 <svelte:head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Fuzzy+Bubbles:wght@400;700&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </svelte:head>
 
 <style>
@@ -20,6 +20,26 @@
   font-weight: 500;
   font-style: normal;
 }
+
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.graceFont {
+  font-family: "Covered By Your Grace", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 </style>
 <main>
     <div class="flex h-full">
@@ -95,7 +115,7 @@
                     <img src={PartnersImage} alt="Partners" class="">
                 </div>
                 <div class="col-span-2">
-                    <p class="text-3xl px-8 my-3">Partners of Solace Global</p>
+                    <p class="text-3xl px-8 my-5">Partners of <span class="graceFont text-5xl">Solace Global</span></p>
                     <p class="px-8 mt-7">How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things.</p>
                     <!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
                     <button class="mt-12 ml-8 transition border-2 border-black text-black py-3 px-9 rounded hover:text-white hover:bg-stone-800 hover:border-stone-800">Learn More</button>
