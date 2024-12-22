@@ -3,6 +3,7 @@
     import Video from "../lib/images/ActualActualFinalVideo.mp4";
     import ArticleImage from "../lib/images/article1.png";
     import PartnersImage from "../lib/images/PartnersImage.png";
+    import '@fortawesome/fontawesome-free/css/all.min.css'
 
 
 </script>
@@ -83,10 +84,54 @@
                 <div class="col-span-2">
                     <p class="text-3xl px-8 my-3">Partners of Solace Global</p>
                     <p class="px-8 mt-7">How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things.</p>
+                    <!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
                     <button class="mt-12 ml-8 transition border-2 border-black text-black py-3 px-9 rounded hover:text-white hover:bg-stone-800 hover:border-stone-800">Learn More</button>
                 </div>
-                
             </div>
+            
+            <!-- Perspectives- Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter. -->
+            <div class="bg-zinc-900 px-32 py-16 text-white mt-20">
+                <div class="grid grid-cols-2 justify-between items-center">
+                    <p class="flex justify-start font-medium text-4xl">Perspectives</p>
+                    <div class="flex justify-end items-center text-xs font-medium">
+                        <p class="underline ">Learn More About Perspectives</p>
+                    </div>
+                </div>
+                <p class="my-8 text-xs">Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter.</p>
+            
+            <div class="grid grid-cols-5 gap-8">
+                <div class="col-span-3">
+                    <img src={ArticleImage} alt="Article" class="">
+                    <div class="mt-6">
+                        <p class="mb-3 font-semibold">Lorem ipsum dolor sit amet, consectetur</p>
+                        <p class="text-sm">Nullam et pellentesque turpis. Fusce et feugiat augue. Donec interdum lorem libero, non pellentesque ante porta et. </p>
+                    </div>
+                </div>
+
+                <div class="col-span-2">
+                    <div>
+                        <img src={ArticleImage} alt="Article" class="w-96">
+                        <p class="mt-3 font-semibold">Lorem ipsum dolor sit amet, consectetur</p>
+                    </div>
+                    <div class="mt-20 bg-neutral-500 text-black p-8 rounded-sm" >
+                        <p class="mb-2">
+                            Subscribe to The Solace Global Newsletter to get weekly updates.
+                        </p>
+                        <form>
+                            <label for="email" class="text-sm font-thin">Email Address</label>
+                            <input type="email" name="email" id="email" autocomplete="email" required class=" w-full rounded-md bg-white px-3 py-1 text-base text-gray-900 focus:outline-2 focus:outline-slate-400">
+                            <button type="submit" class="mt-6 justify-center rounded-md bg-gray-800 px-6 py-3 font-semibold text-white hover:bg-black">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+            </div>
+
+
+
         <!-- End of Content Div -->
         </div>
         <div class="flex-grow"></div>
@@ -95,7 +140,5 @@
 
 
 
-<!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
-<!-- Perspectives- Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter. -->
 <!-- Learn More Perspectives top right button- BLACK PAGE Latest update on importance issues offering diverse insights around the world, image with quote - Knowledge is the light that guides us through the darkness., under image - title - Unlocking true understanding through knowledge and impartiality. Next to image have newsletter subscription, 10 articles not on main page under image and newsletter. Videos under not on main page, under that have another sign up for newsletter(Subscribe to the The Wisdom), Partners again, -->
 <!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
