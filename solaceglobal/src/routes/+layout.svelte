@@ -66,7 +66,7 @@
                     <ul class="mt-2 space-y-2">
                         <li><a href="/about/our-story" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Our Story</a></li>
                         <li><a href="/about/FAQ" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>FAQ</a></li>
-                        <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Our Team</a></li>
+                        <li><a href="/about/our-team" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Our Team</a></li>
                         <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Financials</a></li>
                         <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Media Center</a></li>
                     </ul>

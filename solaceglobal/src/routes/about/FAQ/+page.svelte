@@ -13,12 +13,6 @@
   font-weight: 500;
   font-style: normal;
 }
-.cFont {
-  font-family: "Caveat", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
 </style>
 
 
