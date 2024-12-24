@@ -68,17 +68,17 @@
                         <li><a href="/about/FAQ" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>FAQ</a></li>
                         <li><a href="/about/our-team" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Our Team</a></li>
                         <li><a href="/about/financials" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Financials</a></li>
-                        <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Media Center</a></li>
+                        <!-- <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Media Center</a></li> -->
                     </ul>
                 </div>
                 <!-- Column 3 -->
                 <div>
                     <h4 class=" text-2xl font-base">Get Involved</h4>
                     <ul class="mt-2 space-y-2">
-                        <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>How We Work</a></li>
-                        <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Volunteer</a></li>
+                        <li><a href="/about/how-we-work" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>How We Work</a></li>
+                        <li><a href="/about/volunteer" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Volunteer</a></li>
                         <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Ways to Give</a></li>
-                        <li><a href="/" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Contact</a></li>
+                        <li><a href="/about/contact" class="text-sm text-gray-600 hover:underline" on:click={closeDropdown}>Contact</a></li>
                     </ul>
                 </div>
             </div>

@@ -166,7 +166,7 @@
     <form action="https://secure.smore.com/app/lists/confirm_subscribe" method="POST" class="space-y-6">
         <input type="hidden" name="list_id" value="676a51b695e1b379806173ff">
 
-        <h3 class="text-lg font-semibold text-gray-700">Subscribe to our list</h3>
+        <h3 class="text-2xl font-semibold text-gray-700 rasa">Subscribe To Our Newsletter</h3>
 
         <div class="field-group">
             <label for="smore-subscribe-name" class="block text-sm font-medium text-gray-600">Name</label>
@@ -191,12 +191,12 @@
             />
         </div>
 
-        <div class="text-right">
+        <div class="">
             <button
                 type="submit"
                 name="subscribe"
                 id="smore-subscribe-button"
-                class="mt-4 inline-flex items-center justify-center rounded-md bg-gray-800 px-6 py-3 font-semibold text-white hover:bg-black transition"
+                class="mt-4 inline-flex items-center justify-center rounded-md bg-zinc-800 px-6 py-3 font-semibold text-white hover:bg-black transition"
             >
                 Subscribe
             </button>
