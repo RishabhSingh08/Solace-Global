@@ -53,7 +53,7 @@
     </div>
     <!-- Video- 3 frame video  -->
     <div class="mt-20">
-        <video loop muted autoplay poster={Icon} width="1920">
+        <video loop muted autoplay width="1920">
             <source src={Video} type="video/mp4">
         </video>
             <!-- Hyperlink Text under video- Discover Solace Globals Philanthropy  to explore giving opportunities and make an impact. -->
