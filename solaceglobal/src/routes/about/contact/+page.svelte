@@ -24,7 +24,6 @@
             <p>team@solaceglobal.xyz</p>
             <p>469-573-1655</p>
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNpF98dyDpZn449Uj4Vxls6d7KeT7BE8W4c4YLXXP43qaTEA/viewform?embedded=true" width="640" height="1034" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
         <!-- Main FAQ Content -->
@@ -44,7 +43,8 @@
             <!-- FAQ Content -->
             <div class="col-start-5 col-end-12 space-y-6">
                 <div class="space-y-8">
-                    
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNpF98dyDpZn449Uj4Vxls6d7KeT7BE8W4c4YLXXP43qaTEA/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
                 </div>
             </div>
         </div>
