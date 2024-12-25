@@ -1,7 +1,7 @@
 <script>
     import image01 from "../../../lib/images/MediaImages/robotpic.jpg";
     import image02 from "../../../lib/images/MediaImages/techbuildersImage.png";
-    import video01 from "../../../lib/images/MediaImages/SolaceGlobalLesson1COMP.mp4";
+    import video01 from "../../../lib/images/MediaImages/solaceVideo.mp4";
     import poster01 from "../../../lib/images/MediaImages/poster01.png";
 </script>
 
