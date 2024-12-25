@@ -1,2 +1,1 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
-solaceglobal/src/lib/images/MediaImages/SolaceGlobalLesson1COMP.mp4 filter=lfs diff=lfs merge=lfs -text
