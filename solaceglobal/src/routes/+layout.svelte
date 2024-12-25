@@ -1,5 +1,4 @@
 
-
 <script>
 import "../app.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -9,8 +8,11 @@ let isAboutDropdownOpen = false;
 let isWorkDropdownOpen = false;
 let isIdeasDropdownOpen = false;
 
-// Close all dropdowns
-
+function closeAllDropdowns() {
+    isAboutDropdownOpen = false;
+    isWorkDropdownOpen = false;
+    isIdeasDropdownOpen = false;
+}
 
 function toggleAboutDropdown() {
     isAboutDropdownOpen = !isAboutDropdownOpen;
@@ -30,6 +32,7 @@ function toggleIdeasDropdown() {
     isWorkDropdownOpen = false;
 }
 </script>
+
 
 <main>
 <div class="flex h-full">
@@ -86,20 +89,20 @@ function toggleIdeasDropdown() {
             <div>
                 <h4 class="text-2xl font-base">Explore</h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/about/our-story" class=" text-gray-600 hover:underline">Our Story</a></li>
-                    <li><a href="/about/FAQ" class=" text-gray-600 hover:underline">FAQ</a></li>
-                    <li><a href="/about/our-team" class=" text-gray-600 hover:underline">Our Team</a></li>
-                    <li><a href="/about/financials" class=" text-gray-600 hover:underline">Financials</a></li>
+                    <li><a href="/about/our-story" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Our Story</a></li>
+                    <li><a href="/about/FAQ" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>FAQ</a></li>
+                    <li><a href="/about/our-team" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Our Team</a></li>
+                    <li><a href="/about/financials" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Financials</a></li>
                 </ul>
             </div>
             <!-- Column 3 -->
             <div>
                 <h4 class="text-2xl font-base">Get Involved</h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/about/how-we-work" class=" text-gray-600 hover:underline">How We Work</a></li>
-                    <li><a href="/about/volunteer" class=" text-gray-600 hover:underline">Volunteer</a></li>
-                    <li><a href="/" class=" text-gray-600 hover:underline">Ways to Give</a></li>
-                    <li><a href="/about/contact" class=" text-gray-600 hover:underline">Contact</a></li>
+                    <li><a href="/about/how-we-work" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>How We Work</a></li>
+                    <li><a href="/about/volunteer" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Volunteer</a></li>
+                    <li><a href="/" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Ways to Give</a></li>
+                    <li><a href="/about/contact" class=" text-gray-600 hover:underline on:click={closeAllDropdowns}">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -116,15 +119,14 @@ function toggleIdeasDropdown() {
             </div>
                     <!-- Column 2 -->
             <div>
-                <h4 class="text-2xl font-base"><a href="/work/girls-in-stem" class=" text-gray-600 hover:underline">Girls in STEM</a></h4>
+                <h4 class="text-2xl font-base"><a href="/work/girls-in-stem" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Girls in STEM</a></h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline">Tech Builders</a></li>
+                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Tech Builders</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-2xl font-base">The Connection Project</h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline">Girls in STEM</a></li>
                 </ul>
             </div>
             <div>
