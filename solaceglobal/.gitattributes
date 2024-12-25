@@ -1,1 +1,4 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+solaceglobal/src/lib/images/MediaImages/SolaceGlobalLesson1COMP.mp4 filter=lfs diff=lfs merge=lfs -text
+solaceglobal/src/lib/images/MediaImages/SolaceGlobalLessodsan1COMP.mp4 filter=lfs diff=lfs merge=lfs -text
+solaceglobal/src/lib/images/MediaImages/solaceVideo.mp4 filter=lfs diff=lfs merge=lfs -text
