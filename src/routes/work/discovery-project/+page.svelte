@@ -89,13 +89,15 @@
         </div>
         <div class="border-b border-zinc-300 mx-16"></div>
         <div id="seniors" class="space-y-6">
-
             <div class="grid grid-cols-9 gap-8 items-center">
                 <div class="space-y-5 col-span-4 ">
-                    <p class="text-3xl rasa text-justify" >
-Smart Seniors                    </p>
-</div>
-    </div>
+                    <p class="text-3xl rasa text-center" >Smart Seniors</p>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oqGNcKCjYv4?si=lDv_yjLw6Y5XNEWP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+
             <div class="border-b border-zinc-300 mx-16"></div>
         <div id="spark" class="space-y-6">
             <div class="grid grid-cols-9 gap-16 items-center">
