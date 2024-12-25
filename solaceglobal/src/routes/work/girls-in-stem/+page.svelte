@@ -1,5 +1,6 @@
 <script>
     import image01 from "../../../lib/images/MediaImages/robotpic.jpg";
+    import image02 from "../../../lib/images/MediaImages/techbuildersImage.png";
     import video01 from "../../../lib/images/MediaImages/SolaceGlobalLesson1COMP.mp4";
     import poster01 from "../../../lib/images/MediaImages/poster01.png";
 </script>
@@ -54,7 +55,7 @@
                     <p>In communities where poverty is widespread, and opportunities are scarce, this event represented more than just a learning experience—it was a chance to break the cycle of poverty through education and empowerment. By offering the girls the tools to understand and engage with technology, Solace Global aimed to ignite their curiosity and inspire them to dream beyond their circumstances. Through our collaboration with NNLS, we hope to provide these girls with the skills and confidence to overcome the barriers of poverty and build a brighter future, one that is not limited by their current circumstances but shaped by the knowledge and potential they now possess.</p>
                 </div>
                 <div class="col-span-5">
-                    <img src={image01} alt="">
+                    <img src={image02} alt="">
                     <p class="text-center text-sm my-4">This photo shows the girls in West Bengal, intently observing the robot, with guidance from our mentor in Texas, who is 14,000 km away, demonstrating how STEM connects us across vast distances.</p>
                 </div>
             </div>
