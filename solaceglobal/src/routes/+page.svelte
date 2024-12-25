@@ -28,12 +28,7 @@
   font-weight: 500;
   font-style: normal;
 }
-.cFont {
-  font-family: "Caveat", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
+
 </style>
 <main>
 
@@ -162,8 +157,8 @@
                 <img src={ArticleImage} alt="Article" class="w-96">
                 <p class="mt-3 font-semibold text-2xl rasa">Lorem ipsum dolor sit amet, consectetur</p>
             </div>
-<div class="smore-list-subscribe-form p-6 max-w-md mx-auto bg-white rounded-md shadow-md">
-    <form action="https://secure.smore.com/app/lists/confirm_subscribe" method="POST" class="space-y-6">
+<div class="smore-list-subscribe-form p-6 max-w-md mx-auto bg-white rounded-md shadow-md mt-8">
+    <form action="https://secure.smore.com/app/lists/confirm_subscribe" method="POST" class="space-y-5">
         <input type="hidden" name="list_id" value="676a51b695e1b379806173ff">
 
         <h3 class="text-2xl font-semibold text-gray-700 rasa">Subscribe To Our Newsletter</h3>
@@ -206,12 +201,12 @@
         </div>
     </div>
     </div>
-    <div class="my-16 border-t-2"></div>
+    <div class="my-16"></div>
 
     <!-- Foundation Facts- 6650+ people affected, 3400+ - money, 50+ students, 11+ programs  -->
     <div class="">
         <div class="mb-8">
-            <p class="text-4xl rasa">Foundation Facts</p>
+            <p class="text-4xl rasa text-center">Foundation Facts</p>
         </div>
         <div class="grid grid-cols-4 gap-8 text-center text-7xl">
             <div><div class="rasa">6650+</div> <p class="mt text-base">People affected</p> </div>
