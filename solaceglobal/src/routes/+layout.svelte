@@ -126,13 +126,25 @@ function toggleIdeasDropdown() {
                 </ul>
             </div>
             <div>
-                <h4 class="text-2xl font-base">The Connection Project</h4>
+                <h4 class="text-2xl font-base"><a href="/work/connection-project" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Connection Project</a></h4>
                 <ul class="mt-2 space-y-2">
+                    <li><a href="/work/connection-project/#tech-builders" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Chess for Change</a></li>
+                    <li><a href="/work/connection-project/#melodies" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Melodies for Memories</a></li>
+                    <li><a href="/work/connection-project/#creations" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>3D Commemorative Creations</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-2xl font-base">The Discovery Project</h4>
+                <h4 class="text-2xl font-base"><a href="/work/discovery-project" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Discovery Project</a></h4>
                 <ul class="mt-2 space-y-2">
+                    <li><a href="/work/discovery-project/#dreams" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>3D Dreams: Empowering Kids
+</a></li>
+                    <li><a href="/work/discovery-project/#robots" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Robots for Earth
+
+</a></li>
+                    <li><a href="/work/discovery-project/#seniors" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Smart Seniors
+</a></li>
+                    <li><a href="/work/discovery-project/#spark" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>STEM Spark</a></li>
+                    <li></li>
                 </ul>
             </div>
         </div>    
@@ -183,7 +195,7 @@ function toggleIdeasDropdown() {
         </a>
     </div>
     <div>
-        <p class="text-[1rem]">We are a nonprofit fighting poverty and inequity around the world.</p>
+        <p class="text-sm text-center">We are a student-led nonprofit focused on empowering underserved communities through support, innovation, and impactful outreach programs.</p>
     </div>
     <div class="flex justify-end gap-8 items-center text-2xl">
         <button aria-label="Tiktok">

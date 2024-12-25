@@ -62,7 +62,7 @@
         </div>
         <div class="border-b border-zinc-300 mx-16"></div>
         <div id="CodeHER" class="space-y-6">
-            <div class="grid grid-cols-9 gap-16 items-center">
+            <div class="grid grid-cols-9 gap-12 items-center">
                 <div class="col-span-4">
         <video loop muted controls width="1920" poster={poster01}>
             <source src={video01} type="video/mp4">

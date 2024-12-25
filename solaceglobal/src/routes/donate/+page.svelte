@@ -25,12 +25,12 @@ let globalConflicts = {
 
 // Learning causes
 let learningCauses = {
-  Europe: 0,
-  Asia: 0,
+  "Europe": 0,
+  "Asia": 0,
   "North America": 0,
   "South America": 0,
-  Australia: 0,
-  Africa: 0
+  "Australia": 0,
+  "Africa": 0
 };
 
 function nextSection() {
@@ -154,7 +154,14 @@ function generateUrl() {
 
     <h3 class="text-lg font-bold mb-2">What do you want to donate to?</h3>
     <button
-      class="block w-full p-2 border bg-black text-white rounded mb-2"
+      class="block w-full p-2 bg-black text-white rounded mb-2"
+    >
+    <a href={generateUrl()}>
+        Solace Global
+    </a>
+    </button>
+    <button
+      class="block w-full p-2 border bg-black text-white rounded"
       on:click={() => {
         selectedCategory = "Causes";
         nextSection();
@@ -162,14 +169,7 @@ function generateUrl() {
     >
       Causes (War, Education, Learning)
     </button>
-    <button
-      class="block w-full p-2 bg-black text-white rounded"
 
-    >
-    <a href={generateUrl()}>
-        Robotics Kits and Chess Boards
-    </a>
-    </button>
   </div>
   {/if}
 
