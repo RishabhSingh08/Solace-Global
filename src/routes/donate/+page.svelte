@@ -114,7 +114,7 @@
           <textarea
             bind:value={message}
             placeholder="Write a message (optional)"
-            class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-red-500 focus:border-red-500"
+            class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring focus:ring-red-500 focus:border-red-500"
           ></textarea>
         </div>
   

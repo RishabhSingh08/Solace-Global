@@ -181,7 +181,7 @@
                 name="email"
                 id="smore-subscribe-email"
                 required
-                class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:ring-slate-400 focus:border-slate-400 text-gray-900 px-3 py-2"
+                class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:ring-slate-400 focus:ring focus:border-slate-400 text-gray-900 px-3 py-2"
                 placeholder="you@example.com"
             />
         </div>

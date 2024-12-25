@@ -31,6 +31,24 @@ function toggleIdeasDropdown() {
     isAboutDropdownOpen = false;
     isWorkDropdownOpen = false;
 }
+
+  import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
+
+  let showPopup = false;
+
+  onMount(() => {
+    const acceptedTerms = localStorage.getItem('acceptedTerms');
+    if (!acceptedTerms) {
+      showPopup = true;
+    }
+  });
+
+  function acceptTerms() {
+    localStorage.setItem('acceptedTerms', 'true');
+    showPopup = false;
+  }
+
 </script>
 
 
@@ -44,7 +62,7 @@ function toggleIdeasDropdown() {
         <!-- Logo -->
         <div class="flex justify-start">
             <a href="/">
-                <img src={Icon} alt="Logo" class="w-32">
+                <img src={Icon} alt="Logo" class="w-32" on:click={closeAllDropdowns}>
             </a>
         </div>
 
@@ -66,13 +84,13 @@ function toggleIdeasDropdown() {
                 class="text-lg font-medium hover:text-black hover:underline focus:outline-none"
                 on:click={toggleIdeasDropdown}
             >
-                Ideas
+                Insights
             </button>
         </div>
 
         <!-- Donate -->
         <div class="flex justify-end">
-            <a href="/donate" class="text-lg hover:text-black hover:underline">Donate</a>
+            <a href="/donate" class="text-lg hover:text-black hover:underline" on:click={closeAllDropdowns}>Donate</a>
         </div>
     </div>
 
@@ -100,7 +118,7 @@ function toggleIdeasDropdown() {
                 <h4 class="text-2xl font-base">Get Involved</h4>
                 <ul class="mt-2 space-y-2">
                     <li><a href="/about/how-we-work" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>How We Work</a></li>
-                    <li><a href="/about/volunteer" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Volunteer</a></li>
+                    <li><a href="/about/careers" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Careers</a></li>
                     <li><a href="/" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Ways to Give</a></li>
                     <li><a href="/about/contact" class=" text-gray-600 hover:underline on:click={closeAllDropdowns}">Contact</a></li>
                 </ul>
@@ -129,15 +147,11 @@ function toggleIdeasDropdown() {
                 <h4 class="text-2xl font-base"><a href="/work/connection-project" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Connection Project</a></h4>
                 <ul class="mt-2 space-y-2">
                     <li><a href="/work/connection-project/#tech-builders" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Chess for Change</a></li>
-                    <li><a href="/work/connection-project/#melodies" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Melodies for Memories</a></li>
-                    <li><a href="/work/connection-project/#creations" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>3D Commemorative Creations</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-2xl font-base"><a href="/work/discovery-project" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Discovery Project</a></h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/work/discovery-project/#dreams" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>3D Dreams: Empowering Kids
-</a></li>
                     <li><a href="/work/discovery-project/#robots" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Robots for Earth
 
 </a></li>
@@ -156,42 +170,59 @@ function toggleIdeasDropdown() {
         <div class="grid grid-cols-3 gap-6">
             <!-- Column 1 -->
             <div>
-                <h4 class="text-2xl font-base">Ideas</h4>
+                <h4 class="text-2xl font-base">Insights</h4>
                 <p class="mt-2 text-lg">
                     Learn about our story, our operation and our role in making the world one step better at a time.
                 </p>
             </div>
             <!-- Column 2 -->
             <div>
-                <h4 class="text-2xl font-base">Explore</h4>
+                <h4 class="text-2xl font-base">Featured</h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/ideas/our-story" class=" text-gray-600 hover:underline">Our Story</a></li>
-                    <li><a href="/ideas/FAQ" class=" text-gray-600 hover:underline">FAQ</a></li>
-                    <li><a href="/ideas/our-team" class=" text-gray-600 hover:underline">Our Team</a></li>
-                    <li><a href="/ideas/financials" class=" text-gray-600 hover:underline">Financials</a></li>
+                    <li><a href="/insights/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></li>
+                    <li><a href="/insights/the-wisdom" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Wisdom</a></li>
+                    <li><a href="/insights/our-team" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Leadership Blog</a></li>
+                    <li><a href="https://youtu.be/VlVqBOrKxuE?si=dtrMCKrtJ5Q6YjX-" target="_blank" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Explore our latest video!</a></li>
                 </ul>
             </div>
             <!-- Column 3 -->
             <div>
-                <h4 class="text-2xl font-base">Get Involved</h4>
+                <h4 class="text-2xl font-base">Popular Topics</h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/about/how-we-work" class=" text-gray-600 hover:underline">How We Work</a></li>
-                    <li><a href="/about/volunteer" class=" text-gray-600 hover:underline">Volunteer</a></li>
-                    <li><a href="/" class=" text-gray-600 hover:underline">Ways to Give</a></li>
-                    <li><a href="/about/contact" class=" text-gray-600 hover:underline">Contact</a></li>
+
                 </ul>
             </div>
         </div>    </div>
     {/if}
 </nav>
 
+
     <div class="my-16">
         <slot/>
     </div>
+
+{#if showPopup}
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white border border-gray-300 rounded-lg shadow-lg max-w-lg p-6 space-y-4">
+      <h2 class="text-lg font-semibold text-gray-800">Terms and Conditions</h2>
+      <p class="text-sm text-gray-600">
+        By using this website, you agree to our
+        <a href="/terms-and-conditions" target="_blank" class="text-red-500 underline hover:text-red-600">Terms and Conditions</a>.
+      </p>
+      <button
+        class="w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+        on:click={acceptTerms}
+      >
+        Accept
+      </button>
+    </div>
+  </div>
+{/if}
+
 <footer class="p-8 border-t grid grid-cols-3 gap-8">
     <div>
         <a href="/">
-            <img href="" class="items-center w-32" src={Icon} alt="Logo">
+            <img href="" class="items-center w-32" src={Icon} alt="Logo" on:click={closeAllDropdowns}>
         </a>
     </div>
     <div>
@@ -199,17 +230,17 @@ function toggleIdeasDropdown() {
     </div>
     <div class="flex justify-end gap-8 items-center text-2xl">
         <button aria-label="Tiktok">
-            <a href="https://www.tiktok.com/@solaceglobalnpo" target="_blank" aria-label="Tiktok">
+            <a href="https://www.tiktok.com/@solaceglobalnpo" target="_blank" aria-label="Tiktok" class="hover:text-red-500 transition">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
         </button>
         <button aria-label="Instagram">
-            <a href="https://www.instagram.com/solaceglobalnpo/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/solaceglobalnpo/" target="_blank" aria-label="Instagram" class="hover:text-red-500 transition">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </button>
         <button aria-label="Youtube">
-            <a href="https://www.youtube.com/@SolaceGlobalNPO1" target="_blank" aria-label="Youtube">
+            <a href="https://www.youtube.com/@SolaceGlobalNPO1" target="_blank" aria-label="Youtube" class="hover:text-red-500 transition">
                 <i class="fa-brands fa-youtube"></i>
             </a>
         </button>               
