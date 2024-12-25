@@ -130,21 +130,21 @@ function generateUrl() {
   {#if currentSection === 1}
   <div>
     <h2 class="text-xl font-bold mb-4">Enter Your Details</h2>
-    <label class="block mb-2">Name</label>
+    <p class="block mb-2">Name</p>
     <input
       type="text"
       bind:value={name}
       class="w-full p-2 border rounded mb-4"
       placeholder="Your Name"
     />
-    <label class="block mb-2">Email</label>
+    <p class="block mb-2">Email</p>
     <input
       type="email"
       bind:value={email}
       class="w-full p-2 border rounded mb-4"
       placeholder="Your Email"
     />
-    <label class="block mb-2">Donation Amount ($)</label>
+    <p class="block mb-2">Donation Amount ($)</p>
     <input
       type="number"
       bind:value={donationAmount}
@@ -185,7 +185,7 @@ function generateUrl() {
     <label class="block mb-2">
       <input type="checkbox" bind:group={selectedCauses} value="Learning Causes" /> Learning Causes
     </label>
-    <label class="block mb-2">Donation Amount ($)</label>
+    <p class="block mb-2">Donation Amount ($)</p>
     <input
       type="number"
       bind:value={donationAmount}
