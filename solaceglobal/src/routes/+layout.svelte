@@ -122,6 +122,7 @@ function toggleIdeasDropdown() {
                 <h4 class="text-2xl font-base"><a href="/work/girls-in-stem" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Girls in STEM</a></h4>
                 <ul class="mt-2 space-y-2">
                     <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Tech Builders</a></li>
+                    <li><a href="/work/girls-in-stem/#CodeHER" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>CodeHER</a></li>
                 </ul>
             </div>
             <div>
