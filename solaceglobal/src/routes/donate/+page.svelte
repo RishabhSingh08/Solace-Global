@@ -1,120 +1,132 @@
 <script>
-  let currentSection = 1;
-  let name = "";
-  let email = "";
-  let selectedCategory = "";
-  let selectedCauses = [];
-  let donationAmount = 0;
+let currentSection = 1;
+let name = "";
+let email = "";
+let selectedCategory = "";
+let selectedCauses = [];
+let donationAmount = 0;
 
-  // Medical causes
-  let medicalCauses = {
-    Cancer: 0,
-    Malaria: 0,
-    Cardiovascular: 0,
-    Respiratory: 0,
-  };
+// Medical causes
+let medicalCauses = {
+  Cancer: 0,
+  Malaria: 0,
+  Cardiovascular: 0,
+  Respiratory: 0
+};
 
-  // Global conflict causes
-  let globalConflicts = {
-    "European Conflict": 0,
-    "Asian Conflict": 0,
-    "African Conflict": 0,
-    "South American Conflict": 0,
-    "Other War Affected Areas": 0,
-  };
+// Global conflict causes
+let globalConflicts = {
+  "European Conflict": 0,
+  "Asian Conflict": 0,
+  "African Conflict": 0,
+  "South American Conflict": 0,
+  "Other War Affected Areas": 0
+};
 
-  // Learning causes
-  let learningCauses = {
-    Europe: 0,
-    Asia: 0,
-    "North America": 0,
-    "South America": 0,
-    Australia: 0,
-    Africa: 0,
-  };
+// Learning causes
+let learningCauses = {
+  Europe: 0,
+  Asia: 0,
+  "North America": 0,
+  "South America": 0,
+  Australia: 0,
+  Africa: 0
+};
 
-  function nextSection() {
-    // Validate name and email at the first step
-    if (currentSection === 1 && (!name || !email)) {
-      alert("Please enter your name and email.");
-      return;
-    }
-
-    // Check for causes if on the causes selection page
-    if (currentSection === 2 && selectedCategory === "Causes" && selectedCauses.length === 0) {
-      currentSection = 6; // Skip to summary if no causes are selected
-      return;
-    }
-
-    currentSection++;
+function nextSection() {
+  if (currentSection === 1 && (!name.trim() || !email.trim())) {
+    alert("Please enter your name and email before proceeding.");
+    return;
   }
 
-  function previousSection() {
-    currentSection--;
+  if (currentSection === 2 && selectedCauses.length === 0) {
+    currentSection = 6; // Skip directly to the summary if no causes are selected.
+    return;
   }
 
-  function calculateTotal() {
-    let total = donationAmount;
-    return total;
-  }
-
-  function validatePercentages(causes) {
-    let totalPercentage = Object.values(causes).reduce((sum, value) => sum + value, 0);
-    if (totalPercentage > 100) {
-      alert("The total percentage cannot exceed 100%.");
-      return false;
-    }
-    return true;
-  }
-
-  function generateUrl() {
-    let message = `Total Donation: $${donationAmount.toFixed(2)}\n\n`;
-
-    if (selectedCategory === "Causes") {
-      if (selectedCauses.includes("Medical")) {
-        message += "Medical Causes\n";
-        for (let cause in medicalCauses) {
-          if (medicalCauses[cause] > 0) {
-            message += `- ${cause}:: ${medicalCauses[cause]}% ($${(
-              (medicalCauses[cause] / 100) *
-              donationAmount
-            ).toFixed(2)})\n`;
-          }
-        }
+  if (currentSection > 2) {
+    if (selectedCauses.includes("Medical")) {
+      const totalPercentage = Object.values(medicalCauses).reduce((acc, value) => acc + value, 0);
+      if (totalPercentage > 100) {
+        alert("Total percentage for Medical Causes cannot exceed 100%.");
+        return;
       }
-      if (selectedCauses.includes("Global Learning")) {
-        message += "Global Conflict Causes\n";
-        for (let conflict in globalConflicts) {
-          if (globalConflicts[conflict] > 0) {
-            message += `- ${conflict}:: ${globalConflicts[conflict]}% ($${(
-              (globalConflicts[conflict] / 100) *
-              donationAmount
-            ).toFixed(2)})\n`;
-          }
-        }
+    }
+    if (selectedCauses.includes("Global Learning")) {
+      const totalPercentage = Object.values(globalConflicts).reduce((acc, value) => acc + value, 0);
+      if (totalPercentage > 100) {
+        alert("Total percentage for Global Conflict Causes cannot exceed 100%.");
+        return;
       }
-      if (selectedCauses.includes("Learning Causes")) {
-        message += "Learning Causes\n";
-        for (let region in learningCauses) {
-          if (learningCauses[region] > 0) {
-            message += `- ${region}:: ${learningCauses[region]}% ($${(
-              (learningCauses[region] / 100) *
-              donationAmount
-            ).toFixed(2)})\n`;
-          }
+    }
+    if (selectedCauses.includes("Learning Causes")) {
+      const totalPercentage = Object.values(learningCauses).reduce((acc, value) => acc + value, 0);
+      if (totalPercentage > 100) {
+        alert("Total percentage for Learning Causes cannot exceed 100%.");
+        return;
+      }
+    }
+  }
+
+  currentSection++;
+}
+
+function previousSection() {
+  currentSection--;
+}
+
+function calculateTotal() {
+  let total = donationAmount;
+  return total;
+}
+
+function generateUrl() {
+  let message = `Total Donation: $${donationAmount.toFixed(2)}\n\n`;
+
+  if (selectedCategory === "Causes") {
+    if (selectedCauses.includes("Medical")) {
+      message += `Medical Causes\n`;
+      for (let cause in medicalCauses) {
+        if (medicalCauses[cause] > 0) {
+          message += `- ${cause}:: ${medicalCauses[cause]}% ($${(
+            (medicalCauses[cause] / 100) *
+            donationAmount
+          ).toFixed(2)})\n`;
         }
       }
     }
-
-    const encodedMessage = encodeURIComponent(message);
-    const url = `https://hcb.hackclub.com/donations/start/solace-global?name=${name}&email=${email}&message=${encodedMessage}&amount=${(
-      donationAmount * 100
-    ).toFixed(0)}`;
-    return url;
+    if (selectedCauses.includes("Global Learning")) {
+      message += `Global Conflict Causes\n`;
+      for (let conflict in globalConflicts) {
+        if (globalConflicts[conflict] > 0) {
+          message += `- ${conflict}:: ${globalConflicts[conflict]}% ($${(
+            (globalConflicts[conflict] / 100) *
+            donationAmount
+          ).toFixed(2)})\n`;
+        }
+      }
+    }
+    if (selectedCauses.includes("Learning Causes")) {
+      message += `Learning Causes\n`;
+      for (let region in learningCauses) {
+        if (learningCauses[region] > 0) {
+          message += `- ${region}:: ${learningCauses[region]}% ($${(
+            (learningCauses[region] / 100) *
+            donationAmount
+          ).toFixed(2)})\n`;
+        }
+      }
+    }
   }
+
+  const encodedMessage = encodeURIComponent(message);
+  const url = `https://hcb.hackclub.com/donations/start/solace-global?name=${name}&email=${email}&message=${encodedMessage}&amount=${(
+    donationAmount * 100
+  ).toFixed(0)}`;
+  return url;
+}
 </script>
-
-<div class="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg">
+<div class="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg ">
   {#if currentSection === 1}
   <div>
     <h2 class="text-xl font-bold mb-4">Enter Your Details</h2>
@@ -132,9 +144,17 @@
       class="w-full p-2 border rounded mb-4"
       placeholder="Your Email"
     />
+    <label class="block mb-2">Donation Amount ($)</label>
+    <input
+      type="number"
+      bind:value={donationAmount}
+      class="w-full p-2 border rounded mb-4"
+      placeholder="Enter donation amount"
+    />
+
     <h3 class="text-lg font-bold mb-2">What do you want to donate to?</h3>
     <button
-      class="block w-full p-2 bg-blue-500 text-white rounded mb-2"
+      class="block w-full p-2 border bg-black text-white rounded mb-2"
       on:click={() => {
         selectedCategory = "Causes";
         nextSection();
@@ -143,13 +163,12 @@
       Causes (War, Education, Learning)
     </button>
     <button
-      class="block w-full p-2 bg-green-500 text-white rounded"
-      on:click={() => {
-        selectedCategory = "Robotics";
-        currentSection = 6; // Skip to donation summary
-      }}
+      class="block w-full p-2 bg-black text-white rounded"
+
     >
-      Robotics Kits and Chess Boards
+    <a href={generateUrl()}>
+        Robotics Kits and Chess Boards
+    </a>
     </button>
   </div>
   {/if}

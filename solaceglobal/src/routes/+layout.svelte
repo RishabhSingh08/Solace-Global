@@ -1,3 +1,5 @@
+
+
 <script>
 import "../app.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -8,11 +10,7 @@ let isWorkDropdownOpen = false;
 let isIdeasDropdownOpen = false;
 
 // Close all dropdowns
-function closeDropdowns() {
-    isAboutDropdownOpen = false;
-    isWorkDropdownOpen = false;
-    isIdeasDropdownOpen = false;
-}
+
 
 function toggleAboutDropdown() {
     isAboutDropdownOpen = !isAboutDropdownOpen;
@@ -33,12 +31,12 @@ function toggleIdeasDropdown() {
 }
 </script>
 
-<main on:click={closeDropdowns}>
+<main>
 <div class="flex h-full">
     <div class="flex-grow"></div>
     <div class="flex-shrink-0 w-[1200px]">
 
-<nav class="w-full py-4 border-b relative" on:click|stopPropagation>
+<nav class="w-full py-4 border-b relative">
     <div class="grid grid-cols-3 items-center px-4 w-full">
         <!-- Logo -->
         <div class="flex justify-start">
@@ -80,11 +78,9 @@ function toggleIdeasDropdown() {
     <div id="dropdown-about-menu" class="absolute left-0 top-full w-full bg-white shadow-md p-6 font-thin border-t">
         <div class="grid grid-cols-3 gap-6">
             <!-- Column 1 -->
-            <div>
-                <h4 class="text-2xl font-base">About Us</h4>
-                <p class="mt-2 text-lg">
-                    Learn about our story, our operation and our role in making the world one step better at a time.
-                </p>
+            <div class="">
+                <h4 class="text-2xl font-base ">About Us</h4>
+                <p class="mt-2 text-lg w-96 ">Learn about our story, our operation and our role in making the world one step better at a time</p>
             </div>
             <!-- Column 2 -->
             <div>
@@ -112,35 +108,32 @@ function toggleIdeasDropdown() {
 
     {#if isWorkDropdownOpen}
     <div id="dropdown-menu-work" class="absolute left-0 top-full w-full bg-white shadow-md p-6 font-thin border-t">
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-4 gap-6">
             <!-- Column 1 -->
             <div>
                 <h4 class="text-2xl font-base">Our Work</h4>
-                <p class="mt-2 text-lg">
-                    Learn about our story, our operation and our role in making the world one step better at a time.
-                </p>
+                <p class="mt-2 text-lg ">Explore how we operate and the methods we use to create meaningful change.</p>
             </div>
-            <!-- Column 2 -->
+                    <!-- Column 2 -->
             <div>
-                <h4 class="text-2xl font-base">Explore</h4>
+                <h4 class="text-2xl font-base"><a href="/work/girls-in-stem" class=" text-gray-600 hover:underline">Girls in STEM</a></h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/work/our-story" class=" text-gray-600 hover:underline">Our Story</a></li>
-                    <li><a href="/work/FAQ" class=" text-gray-600 hover:underline">FAQ</a></li>
-                    <li><a href="/work/our-team" class=" text-gray-600 hover:underline">Our Team</a></li>
-                    <li><a href="/work/financials" class=" text-gray-600 hover:underline">Financials</a></li>
+                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline">Tech Builders</a></li>
                 </ul>
             </div>
-            <!-- Column 3 -->
             <div>
-                <h4 class="text-2xl font-base">Get Involved</h4>
+                <h4 class="text-2xl font-base">The Connection Project</h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/about/how-we-work" class=" text-gray-600 hover:underline">How We Work</a></li>
-                    <li><a href="/about/volunteer" class=" text-gray-600 hover:underline">Volunteer</a></li>
-                    <li><a href="/" class=" text-gray-600 hover:underline">Ways to Give</a></li>
-                    <li><a href="/about/contact" class=" text-gray-600 hover:underline">Contact</a></li>
+                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline">Girls in STEM</a></li>
                 </ul>
             </div>
-        </div>    </div>
+            <div>
+                <h4 class="text-2xl font-base">The Discovery Project</h4>
+                <ul class="mt-2 space-y-2">
+                </ul>
+            </div>
+        </div>    
+    </div>
     {/if}
 
     {#if isIdeasDropdownOpen}
