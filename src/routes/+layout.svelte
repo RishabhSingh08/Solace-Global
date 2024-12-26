@@ -84,7 +84,9 @@ function toggleIdeasDropdown() {
                 class="text-lg font-medium hover:text-black hover:underline focus:outline-none"
                 on:click={toggleIdeasDropdown}
             >
-                Insights
+            <a href="/the-wisdom">
+                The Wisdom
+            </a>
             </button>
         </div>
 
@@ -129,7 +131,7 @@ function toggleIdeasDropdown() {
 
     {#if isWorkDropdownOpen}
     <div id="dropdown-menu-work" class="absolute left-0 top-full w-full bg-white shadow-md p-6 font-thin border-t">
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-5 gap-6">
             <!-- Column 1 -->
             <div>
                 <h4 class="text-2xl font-base">Our Work</h4>
@@ -161,39 +163,15 @@ function toggleIdeasDropdown() {
                     <li></li>
                 </ul>
             </div>
+            <div class="border-l pl-8">
+                <h4 class="text-2xl  font-base"><a href="/work/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></h4>
+                <p class="mt-2  ">Explore how we operate and the methods we use to create meaningful change.</p>
+
+            </div>
         </div>    
     </div>
     {/if}
 
-    {#if isIdeasDropdownOpen}
-    <div id="dropdown-menu-ideas" class="absolute left-0 top-full w-full bg-white shadow-md p-6 font-thin border-t">
-        <div class="grid grid-cols-3 gap-6">
-            <!-- Column 1 -->
-            <div>
-                <h4 class="text-2xl font-base">Insights</h4>
-                <p class="mt-2 text-lg">
-                    Learn about our story, our operation and our role in making the world one step better at a time.
-                </p>
-            </div>
-            <!-- Column 2 -->
-            <div>
-                <h4 class="text-2xl font-base">Featured</h4>
-                <ul class="mt-2 space-y-2">
-                    <li><a href="/insights/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></li>
-                    <li><a href="/insights/the-wisdom" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Wisdom</a></li>
-                    <li><a href="/insights/leadership-blog" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Leadership Blog</a></li>
-                    <li><a href="https://youtu.be/VlVqBOrKxuE?si=dtrMCKrtJ5Q6YjX-" target="_blank" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Explore our latest video!</a></li>
-                </ul>
-            </div>
-            <!-- Column 3 -->
-            <div>
-                <h4 class="text-2xl font-base">Popular Topics</h4>
-                <ul class="mt-2 space-y-2">
-
-                </ul>
-            </div>
-        </div>    </div>
-    {/if}
 </nav>
 
 

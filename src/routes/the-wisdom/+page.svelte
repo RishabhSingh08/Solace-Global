@@ -1,5 +1,5 @@
 <script>
-    import placeholderImage from "../../../lib/images/MediaImages/robotpic.jpg";
+    import placeholderImage from "../../lib/images/MediaImages/robotpic.jpg";
 
     const articles = [
         "Bridging the STEM Gap: Empowering Impoverished Communities Through Education",
@@ -18,7 +18,7 @@
     const generateUrl = (title) => {
         const name = title.trim().split(' ');
         const pageName = name[name.length - 1].toLowerCase();
-        return `../insights/article/${pageName}`;
+        return `../article/${pageName}`;
     };
 </script>
 
