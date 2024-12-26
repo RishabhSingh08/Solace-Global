@@ -181,7 +181,7 @@ function toggleIdeasDropdown() {
                 <ul class="mt-2 space-y-2">
                     <li><a href="/insights/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></li>
                     <li><a href="/insights/the-wisdom" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Wisdom</a></li>
-                    <li><a href="/insights/our-team" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Leadership Blog</a></li>
+                    <li><a href="/insights/leadership-blog" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Leadership Blog</a></li>
                     <li><a href="https://youtu.be/VlVqBOrKxuE?si=dtrMCKrtJ5Q6YjX-" target="_blank" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Explore our latest video!</a></li>
                 </ul>
             </div>
@@ -202,7 +202,7 @@ function toggleIdeasDropdown() {
     </div>
 
 {#if showPopup}
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-100">
     <div class="bg-white border border-gray-300 rounded-lg shadow-lg max-w-lg p-6 space-y-4">
       <h2 class="text-lg font-semibold text-gray-800">Terms and Conditions</h2>
       <p class="text-sm text-gray-600">
