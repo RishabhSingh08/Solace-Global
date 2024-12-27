@@ -1,6 +1,6 @@
 <script>
 
-    import { Partners } from "../../lib/images/PartnersImage.png";
+    import  Partners  from "../../lib/images/articleImages/areas.png";
 
     const articles = [
         "Bridging the STEM Gap: Empowering Impoverished Communities Through Education",
@@ -22,7 +22,7 @@
         return `../article/${pageName}`;
     };
 
-    const generateImage = (images) => {
+    const generateImage = () => {
         const name = images.trim().split(' ');
         const imageName = name[name.length - 1].toLowerCase();
         console.log(`../../lib/images/${imageName}.png`);

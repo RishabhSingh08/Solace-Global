@@ -1,14 +1,21 @@
 <script>
   export let title = "A Warming World: The Unfolding Crisis of Climate Change";
   export let description = "An exploration of the escalating impacts of climate change and the urgent need for collective action.";
+
+  import Image01 from "../../../lib/images/articleImages/insideImages/climate1.jpg";
+  import Image02 from "../../../lib/images/articleImages/insideImages/climate2.jpg";
+  
+
 </script>
 
 <main class="py-8 px-4 text-justify">
+<img src={Image01} alt="" class="w-full">
+
   <!-- Title and Description -->
-  <header class="mb-12 grid grid-cols-2 items-center gap-12">
+  <header class="my-12 grid grid-cols-2 items-center gap-12">
     <h1 class="text-4xl font-semibold text-gray-800 text-left">{title}</h1>
     <p class="mt-4 text-lg text-gray-600">{description}</p>
-  </header>
+</header>
 
   <div class="w-full border-b mb-12"></div>
 
@@ -32,11 +39,17 @@
     </article>
 
     <!-- Global Impact -->
-    <article>
-      <h2 class="text-3xl font-semibold text-gray-800 text-left">Global Impact</h2>
-      <p class="text-lg text-gray-600 mt-2">
-        Globally, the story is no less extreme. Severe rainfalls intensified hurricanes, and relentless droughts have brought havoc across continents. Thousands of lives have been claimed by heat waves alone, while billions of dollars in economic damages strain already fragile economies.
-      </p>
+    <article class="grid grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center">
+            <img src={Image02} alt="" class="">
+        </div>
+        <div>
+            <h2 class="text-3xl font-semibold text-gray-800 text-left">Global Impact</h2>
+            <p class="text-lg text-gray-600 mt-2">
+                Globally, the story is no less extreme. Severe rainfalls intensified hurricanes, and relentless droughts have brought havoc across continents. Thousands of lives have been claimed by heat waves alone, while billions of dollars in economic damages strain already fragile economies.
+              </p>
+        </div>
+
     </article>
 
     <!-- Scientific Evidence -->
@@ -62,7 +75,28 @@
         The implications of inaction are stark. Yet, within this challenge lies an opportunity: the chance to redefine humanity’s relationship with the planet and create a legacy of sustainability for future generations.
       </p>
     </article>
+    <div class="text-sm border-t py-6 space-y-1">
+        <p class="">Citations</p>
+        <ul class="text-xs space-y-2 font-thin">
+        
+            <li>
+                <a href="https://wmo.int/news/media-centre/climate-change-indicators-reached-record-levels-2023-wmo" target="_blank">
+                    https://wmo.int/news/media-centre/climate-change-indicators-reached-record-levels-2023-wmo
+                </a>
+            </li>
+            <li>
+                <a href="defenders.org/issues/combating-climate-change" target="_blank">
+                    defenders.org/issues/combating-climate-change
+                </a>
+            </li>
+            <li>
+                <a href="discoveringantarctica.org.uk/climate-change/impacts-of-climate-change" target="_blank">
+                    discoveringantarctica.org.uk/climate-change/impacts-of-climate-change
+                </a> 
 
+            </li>
+        </ul>
+    </div>
   </section>
 </main>
 

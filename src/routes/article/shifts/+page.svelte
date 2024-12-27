@@ -1,11 +1,13 @@
 <script>
   export let title = "Article A Region in Flux: Transformations and Their Global Reverberations";
   export let description = "An exploration of recent geopolitical shifts in the Middle East, focusing on the evolving dynamics of conflict, power, and the search for peace.";
+    import Image01 from "../../../lib/images/articleImages/insideImages/shifts1.jpg";
 </script>
 
 <main class="py-8 px-4 text-justify">
+    <img src={Image01} alt="" class="w-full">
   <!-- Title and Description -->
-  <header class="mb-12 grid grid-cols-2 items-center gap-12">
+  <header class="my-8 grid grid-cols-2 items-center gap-12">
     <h1 class="text-4xl font-semibold text-gray-800 text-left">{title}</h1>
     <p class="mt-4 text-lg text-gray-600">{description}</p>
   </header>

@@ -2,6 +2,7 @@
 <script>
     import Icon from "../lib/images/SolaceGlobalLogo.png";
     import Video from "../lib/images/ActualActualFinalVideo.mp4";
+    import ClimateImage from "../lib/images/homePageImages/climate.png";
     import ArticleImage from "../lib/images/article1.png";
     import PartnersImage from "../lib/images/PartnersImage.png";
 
@@ -13,6 +14,10 @@
     import Sponsor06 from "../lib/images/Sponsors/undefined.png";
 
     import Article01 from "../lib/images/MediaImages/article01.png";
+    import Article03 from "../lib/images/homePageImages/article2.jpg";
+    import Article02 from "../lib/images/homePageImages/article3.jpg";
+    import Article04 from "../lib/images/homePageImages/article4.jpg";
+
 </script>
 
 <svelte:head>
@@ -68,12 +73,12 @@
             </p>
         </div>
         <div class="grid grid-cols-4 gap-4 mt-12">
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/climate"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> A Warming World: The Unfolding Crisis of Climate Change</div></a></div>
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/shifts"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> A Region in Flux: Transformations and Their Global Reverberations
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/climate"><img src={ClimateImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> A Warming World: The Unfolding Crisis of Climate Change</div></a></div>
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/shifts"><img src={Article02} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Middle East: Transformations and Their Global Reverberations
 </div></a></div>
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/peace"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Global Conflicts: The Ongoing Struggle for Peace
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/peace"><img src={Article03} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Global Conflicts: The Ongoing Struggle for Peace
 </div></a></div>
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/solar"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Parker Solar Probe's Historic Achievement: A New Frontier in Solar Research
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/solar"><img src={Article04} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Parker Solar Probe's Historic Achievement: A New Frontier in Solar Research
 </div></a></div>
         </div>
     </div>

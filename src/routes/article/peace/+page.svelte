@@ -1,11 +1,16 @@
 <script>
   export let title = "Global Conflicts: The Ongoing Struggle for Peace";
   export let description = "An in-depth analysis of ongoing conflicts across the globe, their impact on populations, and the urgent need for international engagement.";
+
+    import Image01 from "../../../lib/images/articleImages/insideImages/peace1.jpg";
+    import Image02 from "../../../lib/images/articleImages/insideImages/peace2.jpg";
+
 </script>
 
 <main class="py-8 px-4 text-justify">
+    <img src={Image01} alt="" class="w-full">
   <!-- Title and Description -->
-  <header class="mb-12 grid grid-cols-2 items-center gap-12">
+  <header class="mt-8 mb-6  grid grid-cols-2 items-center gap-12">
     <h1 class="text-4xl font-semibold text-gray-800 text-left">{title}</h1>
     <p class="mt-4 text-lg text-gray-600">{description}</p>
   </header>
@@ -32,11 +37,16 @@
     </article>
 
     <!-- Americas -->
-    <article>
-      <h2 class="text-3xl font-semibold text-gray-800 text-left">Americas: Continued Violence and Instability</h2>
-      <p class="text-lg text-gray-600 mt-2">
-        Central and South America also face significant conflicts, such as Mexico’s enduring drug war. This violence disrupts communities, fuels corruption, and undermines governance. Its humanitarian toll includes displacement, economic instability, and cross-border crime, necessitating comprehensive strategies for resolution and recovery.
-      </p>
+    <article class="grid grid-cols-2 gap-8 items-center">
+        <div>
+            <h2 class="text-3xl font-semibold text-gray-800 text-left">Americas: Continued Violence and Instability</h2>
+            <p class="text-lg text-gray-600 mt-2">
+              Central and South America also face significant conflicts, such as Mexico’s enduring drug war. This violence disrupts communities, fuels corruption, and undermines governance. Its humanitarian toll includes displacement, economic instability, and cross-border crime, necessitating comprehensive strategies for resolution and recovery.
+            </p>
+        </div>
+        <div>
+            <img src={Image02} alt="" class="w-full">
+        </div>
     </article>
 
     <!-- Humanitarian Impact -->

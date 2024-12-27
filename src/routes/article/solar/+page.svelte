@@ -1,11 +1,15 @@
 <script>
   export let title = "Parker Solar Probe's Historic Achievement: A New Frontier in Solar Research";
   export let description = "NASA's Parker Solar Probe reached a historic milestone in 2024, becoming the closest man-made object to the Sun, offering new insights into solar phenomena and space exploration.";
+
+  import Image01 from "../../../lib/images/articleImages/insideImages/solar1.jpg"
+  import Image02 from "../../../lib/images/articleImages/insideImages/solar2.jpg"
 </script>
 
 <main class="py-8 px-4 text-justify">
+    <img src={Image01} class="w-full" alt="">
   <!-- Title and Description -->
-  <header class="mb-12 grid grid-cols-2 items-center gap-12">
+  <header class="my-8 grid grid-cols-2 items-center gap-12">
     <h1 class="text-4xl font-semibold text-gray-800 text-left">{title}</h1>
     <p class="mt-4 text-lg text-gray-600">{description}</p>
   </header>
@@ -40,11 +44,16 @@
     </article>
 
     <!-- Technological Advancements -->
-    <article>
-      <h2 class="text-3xl font-semibold text-gray-800 text-left">Technological Advancements in Space Exploration</h2>
-      <p class="text-lg text-gray-600 mt-2">
-        The mission of the Parker Solar Probe highlights the technological advances that make such close exploration of the Sun possible. The spacecraft is protected by cutting-edge heat shields and sophisticated instruments that enable it to gather unprecedented data. These advancements are pushing the boundaries of space exploration, opening new possibilities for future missions targeting other celestial bodies and phenomena.
-      </p>
+    <article class="grid-cols-2 grid items-center gap-12">
+        <div>
+            <h2 class="text-3xl font-semibold text-gray-800 text-left">Technological Advancements in Space Exploration</h2>
+            <p class="text-lg text-gray-600 mt-2">
+              The mission of the Parker Solar Probe highlights the technological advances that make such close exploration of the Sun possible. The spacecraft is protected by cutting-edge heat shields and sophisticated instruments that enable it to gather unprecedented data. These advancements are pushing the boundaries of space exploration, opening new possibilities for future missions targeting other celestial bodies and phenomena.
+            </p>
+        </div>
+        <div>
+            <img src={Image02} alt="" class="w-full">
+        </div>
     </article>
 
     <!-- International Collaboration -->
