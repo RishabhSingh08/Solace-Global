@@ -1,6 +1,8 @@
 <script>
   export let title = "Breaking Free from the Comparison Trap";
   export let description = "A personal journey of overcoming high school pressures and finding success by focusing on what truly matters.";
+
+  import authorImage from "../../../lib/images/Headshots/adhi_karthik.png";
 </script>
 
 <main class="py-8 px-4 text-justify">
@@ -8,8 +10,20 @@
   <header class="mb-12 grid grid-cols-2 items-center gap-12">
     <h1 class="text-4xl font-semibold text-gray-800 text-left">{title}</h1>
     <p class="mt-4 text-lg text-gray-600">{description}</p>
+    
   </header>
-
+    <div class="flex text-gray-500 items-center gap-4  mb-12">
+      <div>
+        <img src={authorImage} alt="" class="w-16 rounded-full ">
+      </div>
+    <div>
+      <p>
+        Adhitiya Karthik
+      </p>
+      <p class="text-xs">December 26, 2024</p>
+  
+    </div>
+    </div>
   <div class="w-full border-b mb-12"></div>
 
   <!-- Article Sections -->
