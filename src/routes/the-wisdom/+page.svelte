@@ -1,6 +1,30 @@
 <script>
 
-    import  Partners  from "../../lib/images/articleImages/areas.png";
+import educationImg from '../../lib/images/articleImages/education.png';
+import distractionImg from '../../lib/images/articleImages/distraction.png';
+import areasImg from '../../lib/images/articleImages/areas.png';
+import channelsImg from '../../lib/images/articleImages/channels.png';
+import communitiesImg from '../../lib/images/articleImages/communities.png';
+import effortsImg from '../../lib/images/articleImages/efforts.png';
+import emergenciesImg from '../../lib/images/articleImages/emergencies.png';
+import generosityImg from '../../lib/images/articleImages/generosity.png';
+import responsibilityImg from '../../lib/images/articleImages/responsibility.png';
+import solutionsImg from '../../lib/images/articleImages/solutions.png';
+
+const images = {
+    "education": educationImg,
+    "distraction": distractionImg,
+    "areas": areasImg,
+    "channels": channelsImg,
+    "communities": communitiesImg,
+    "efforts": effortsImg,
+    "emergencies": emergenciesImg,
+    "generosity": generosityImg,
+    "responsibility": responsibilityImg,
+    "solutions": solutionsImg,
+};
+
+
 
     const articles = [
         "Bridging the STEM Gap: Empowering Impoverished Communities Through Education",
@@ -22,12 +46,13 @@
         return `../article/${pageName}`;
     };
 
-    const generateImage = () => {
-        const name = images.trim().split(' ');
-        const imageName = name[name.length - 1].toLowerCase();
-        console.log(`../../lib/images/${imageName}.png`);
-        return `../../lib/images/${imageName}.png`;
-    };
+const generateImage = (title) => {
+    const name = title.trim().split(' ').pop().toLowerCase();
+    return images[name] || '/fallback-image.png';
+};
+
+
+
 </script>
 
 <svelte:head>
@@ -55,7 +80,7 @@
                 ${i === articles.length - 1 ? 'col-span-4' : ''}`}
             >
                 <img
-                    src=""
+                    src={generateImage(article)}
                     alt="Article"
                     class="w-full h-40 md:h-48 lg:h-56 object-cover rounded-lg mb-4"
                 >
