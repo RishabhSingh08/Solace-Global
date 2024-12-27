@@ -3,7 +3,7 @@
 
   let name = "";
   let email = "";
-  $: amount = 0;
+  let amount = 0;
   let activeCauses = [];
   let allocationError = false;
   let showError = false;
@@ -141,7 +141,6 @@
             type="number"
             bind:value={amount}
             placeholder="Enter Amount"
-            min="1"
             class="w-full px-4 py-2 mt-1 border rounded-lg focus:ring outline-none 
               {incompleteFields.amount ? 'ring-red-500 ring' : ''}"
           />
@@ -149,7 +148,7 @@
 
         <div>
           <p class="block text-sm font-medium text-gray-700">
-            Allocate Percentage to Causes
+            Allocate Percentage to Causes <span class="font-thin text-gray-500">(optional)</span>
           </p>
 
           {#each Object.keys(causeOptions) as category}
