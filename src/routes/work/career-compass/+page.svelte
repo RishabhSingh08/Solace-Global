@@ -37,6 +37,9 @@
             <div class="border-b border-zinc-300 mx-16"></div>
 
             <!-- Career Dropdowns -->
+             <p class="text-4xl rasa mx-16" id="engineering">
+                Engineering
+             </p>
             <div class="space-y-6 mx-16">
                 <!-- Mechanical Engineering -->
                 <details class="border rounded-lg shadow p-4">

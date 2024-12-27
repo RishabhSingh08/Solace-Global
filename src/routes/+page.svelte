@@ -11,6 +11,8 @@
     import Sponsor04 from "../lib/images/Sponsors/senior.png";
     import Sponsor05 from "../lib/images/Sponsors/shanti.png";
     import Sponsor06 from "../lib/images/Sponsors/undefined.png";
+
+    import Article01 from "../lib/images/MediaImages/article01.png";
 </script>
 
 <svelte:head>
@@ -66,10 +68,13 @@
             </p>
         </div>
         <div class="grid grid-cols-4 gap-4 mt-12">
-            <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Chess is a Catalyst for Knowledge</div></div>
-            <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> How AI Effects Education</div></div>
-            <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Robotics</div></div>
-            <div class="w-64 hover:underline hover:cursor-pointer"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Climate Change</div></div>
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/climate"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> A Warming World: The Unfolding Crisis of Climate Change</div></a></div>
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/shifts"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> A Region in Flux: Transformations and Their Global Reverberations
+</div></a></div>
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/peace"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Global Conflicts: The Ongoing Struggle for Peace
+</div></a></div>
+            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/solar"><img src={ArticleImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Parker Solar Probe's Historic Achievement: A New Frontier in Solar Research
+</div></a></div>
         </div>
     </div>
     
@@ -144,12 +149,14 @@
         <p class="my-8 text-xs">Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter.</p>
     
     <div class="grid grid-cols-5 gap-8">
-        <div class="col-span-3">
-            <img src={ArticleImage} alt="Article" class="">
-            <div class="mt-6">
-                <p class="mb-3 font-semibold text-2xl rasa">Lorem ipsum dolor sit amet, consectetur</p>
-                <p class="text-sm">Nullam et pellentesque turpis. Fusce et feugiat augue. Donec interdum lorem libero, non pellentesque ante porta et. </p>
-            </div>
+        <div class="col-span-3 hover:scale-105 transition  p-6 rounded-lg shadow-2xl shadow-white">
+            <a href="/article/trap">
+                <img src={Article01} alt="Article" class="" >
+                <div class="mt-6">
+                    <p class="mb-3 font-semibold text-2xl rasa">Breaking Free from the Comparison Trap</p>
+                    <p class="text-sm">Explore how overcoming societal pressures and embracing personal passions can redefine the path to success. </p>
+                </div>
+            </a>
         </div>
         <!-- Learn More Perspectives top right button- BLACK PAGE Latest update on importance issues offering diverse insights around the world, image with quote - Knowledge is the light that guides us through the darkness., under image - title - Unlocking true understanding through knowledge and impartiality. Next to image have newsletter subscription, 10 articles not on main page under image and newsletter. Videos under not on main page, under that have another sign up for newsletter(Subscribe to the The Wisdom), Partners again, -->
         <div class="col-span-2">

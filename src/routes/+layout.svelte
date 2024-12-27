@@ -131,18 +131,13 @@ function toggleIdeasDropdown() {
 
     {#if isWorkDropdownOpen}
     <div id="dropdown-menu-work" class="absolute left-0 top-full w-full bg-white shadow-md p-6 font-thin border-t">
-        <div class="grid grid-cols-5 gap-6">
+        <div class="grid grid-cols-4 gap-6">
             <!-- Column 1 -->
-            <div>
-                <h4 class="text-2xl font-base">Our Work</h4>
-                <p class="mt-2 text-lg ">Explore how we operate and the methods we use to create meaningful change.</p>
-            </div>
                     <!-- Column 2 -->
-            <div>
-                <h4 class="text-2xl font-base"><a href="/work/girls-in-stem" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Girls in STEM</a></h4>
+                                 <div class="">
+                <h4 class="text-2xl  font-base"><a href="/work/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Tech Builders</a></li>
-                    <li><a href="/work/girls-in-stem/#CodeHER" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>CodeHER</a></li>
+                    <li><a href="/work/career-compass/#engineering" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Engineering</a></li>
                 </ul>
             </div>
             <div>
@@ -163,11 +158,14 @@ function toggleIdeasDropdown() {
                     <li></li>
                 </ul>
             </div>
-            <div class="border-l pl-8">
-                <h4 class="text-2xl  font-base"><a href="/work/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></h4>
-                <p class="mt-2  ">Explore how we operate and the methods we use to create meaningful change.</p>
-
+            <div>
+                <h4 class="text-2xl font-base"><a href="/work/girls-in-stem" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Girls in STEM</a></h4>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/work/girls-in-stem/#tech-builders" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Tech Builders</a></li>
+                    <li><a href="/work/girls-in-stem/#CodeHER" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>CodeHER</a></li>
+                </ul>
             </div>
+
         </div>    
     </div>
     {/if}

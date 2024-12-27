@@ -1,5 +1,6 @@
 <script>
-    import placeholderImage from "../../lib/images/MediaImages/robotpic.jpg";
+
+    import { Partners } from "../../lib/images/PartnersImage.png";
 
     const articles = [
         "Bridging the STEM Gap: Empowering Impoverished Communities Through Education",
@@ -20,6 +21,13 @@
         const pageName = name[name.length - 1].toLowerCase();
         return `../article/${pageName}`;
     };
+
+    const generateImage = (images) => {
+        const name = images.trim().split(' ');
+        const imageName = name[name.length - 1].toLowerCase();
+        console.log(`../../lib/images/${imageName}.png`);
+        return `../../lib/images/${imageName}.png`;
+    };
 </script>
 
 <svelte:head>
@@ -36,17 +44,18 @@
 </style>
 
 <main class="">
+    <img src={Partners} alt="">
     <div class="grid grid-cols-4 gap-6">
         {#each articles as article, i}
             <a
                 href={generateUrl(article)}
-                class={` p-4 bg-white hover:scale-105 transition shadow-xl rounded-lg rasa 
+                class={ `p-4 bg-white hover:scale-105 transition shadow-xl rounded-lg rasa 
                 ${i % 4 === 2 ? 'col-span-2' : ''} 
                 ${Math.floor(i / 4) % 2 === 1 && i % 4 === 0 ? 'col-span-2 ' : ''} 
                 ${i === articles.length - 1 ? 'col-span-4' : ''}`}
             >
                 <img
-                    src={placeholderImage}
+                    src=""
                     alt="Article"
                     class="w-full h-40 md:h-48 lg:h-56 object-cover rounded-lg mb-4"
                 >
@@ -61,3 +70,4 @@
         {/each}
     </div>
 </main>
+
