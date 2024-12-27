@@ -72,6 +72,23 @@
         At the heart of any solution to the region’s crises are the people of the Middle East. Displaced by conflict, burdened by economic hardship, and yearning for a better future, their empowerment through civil society, inclusive governance, and investment in education and infrastructure is critical. The future of the region, while fraught with challenges, also offers opportunities for renewal, peace, and prosperity through collaboration and mutual respect.
       </p>
     </article>
+<div class="text-sm border-t py-6 space-y-1">
+    <p class="">Citations</p>
+    <ul class="text-xs space-y-2 font-thin">
+    
+        <li>
+            <a href="https://perconcordiam.com/geopolitical-shifts-in-the-middle-east/" target="_blank">
+                Geopolitical Shifts in the Middle East
+            </a>
+        </li>
+        <li>
+            <a href="https://cscr.pk/explore/themes/politics-governance/geopolitical-shifts-in-the-middle-east" target="_blank">
+                Geopolitical Shifts in the Middle East
+            </a>
+        </li>
+
+    </ul>
+</div>
 
   </section>
 </main>

@@ -44,7 +44,7 @@
 </style>
 
 <main class="">
-    <img src={Partners} alt="">
+
     <div class="grid grid-cols-4 gap-6">
         {#each articles as article, i}
             <a

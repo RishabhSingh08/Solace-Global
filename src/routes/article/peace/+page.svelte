@@ -56,6 +56,28 @@
         The global consequences of these conflicts are profound, with millions displaced and essential services disrupted. The international community must focus on addressing root causes, providing humanitarian aid, and fostering peacebuilding initiatives. Through diplomacy, conflict resolution, and sustained support, we can alleviate suffering and promote long-term stability.
       </p>
     </article>
+<div class="text-sm border-t py-6 space-y-1">
+    <p class="">Citations</p>
+    <ul class="text-xs space-y-2 font-thin">
+    
+        <li>
+            <a href="https://worldrelief.org/meblog-3-neglected-global-humanitarian-crises-to-know-about-in-2023/" target="_blank">
+                3 Neglected Global Humanitarian Crises to Know About in 2023
+            </a>
+        </li>
+        <li>
+            <a href="https://media.cnn.com/api/v1/images/stellar/prod/230916034153-01-libya-flood-0916.jpg?c=original" target="_blank">
+                Libya Flood
+            </a>
+        </li>
+        <li>
+            <a href="https://www.care.org/news-and-stories/three-humanitarian-crises-you-should-know-about-in-2024/" target="_blank">
+                Three Humanitarian Crises You Should Know About in 2024
+            </a>
+        </li>
+
+    </ul>
+</div>
 
   </section>
 </main>

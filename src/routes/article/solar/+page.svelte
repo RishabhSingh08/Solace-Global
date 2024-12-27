@@ -79,6 +79,28 @@
         The Parker Solar Probe’s journey closer to the Sun marks a historic achievement in space exploration. Its data will provide invaluable insights into solar phenomena and space weather, helping to shape future missions and technological advancements. As we continue to unlock the mysteries of the cosmos, this mission will remain a pivotal moment in the history of space exploration.
       </p>
     </article>
+<div class="text-sm border-t py-6 space-y-1">
+    <p class="">Citations</p>
+    <ul class="text-xs space-y-2 font-thin">
+    
+        <li>
+            <a href="https://news.uchicago.edu/story/nasa-solar-probe-named-after-uchicago-scientist-begins-historic-mission" target="_blank">
+                NASA’s Solar Probe, Named After UChicago Scientist, Begins Historic Mission
+            </a>
+        </li>
+        <li>
+            <a href="https://www.yahoo.com/news/nasas-solar-probe-fly-closer-130351562.html" target="_blank">
+                NASA’s Solar Probe to Fly Closer to the Sun than Ever Before
+            </a>
+        </li>
+        <li>
+            <a href="https://www.npr.org/2024/11/15/g-s1-33748/nasa-parker-solar-probe-mission-to-the-sun" target="_blank">
+                NASA's Parker Solar Probe Mission to the Sun
+            </a>
+        </li>
+
+    </ul>
+</div>
 
   </section>
 </main>
