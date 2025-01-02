@@ -212,8 +212,10 @@
         <!-- Learn More Perspectives top right button- BLACK PAGE Latest update on importance issues offering diverse insights around the world, image with quote - Knowledge is the light that guides us through the darkness., under image - title - Unlocking true understanding through knowledge and impartiality. Next to image have newsletter subscription, 10 articles not on main page under image and newsletter. Videos under not on main page, under that have another sign up for newsletter(Subscribe to the The Wisdom), Partners again, -->
         <div class="col-span-2">
             <div>
-                <img src={ArticleImage} alt="Article" class="w-96">
-                <p class="mt-3 font-semibold text-2xl rasa">Lorem ipsum dolor sit amet, consectetur</p>
+                <a href="/article/path">
+                    <img src={ArticleImage} alt="Article" class="w-96">
+                    <p class="mt-3 font-semibold text-2xl rasa">Lorem ipsum dolor sit amet, consectetur</p>
+                </a>
             </div>
 <div class="smore-list-subscribe-form p-6 max-w-md mx-auto bg-white rounded-md shadow-md mt-8">
     <form action="https://secure.smore.com/app/lists/confirm_subscribe" method="POST" class="space-y-5">
