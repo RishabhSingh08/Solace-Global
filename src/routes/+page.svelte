@@ -18,6 +18,38 @@
     import Article02 from "../lib/images/homePageImages/article3.jpg";
     import Article04 from "../lib/images/homePageImages/article4.jpg";
 
+
+  const articles = [
+    {
+      href: "/article/climate",
+      imgSrc: ClimateImage,
+      altText: "Climate Change Image",
+      category: "Article",
+      title: "A Warming World: The Unfolding Crisis of Climate Change"
+    },
+    {
+      href: "/article/shifts",
+      imgSrc: Article02,
+      altText: "Middle East Transformations",
+      category: "Article",
+      title: "Middle East: Transformations and Their Global Reverberations"
+    },
+    {
+      href: "/article/peace",
+      imgSrc: Article03,
+      altText: "Global Peace Image",
+      category: "Article",
+      title: "Global Conflicts: The Ongoing Struggle for Peace"
+    },
+    {
+      href: "/article/solar",
+      imgSrc: Article04,
+      altText: "Solar Research Image",
+      category: "Article",
+      title: "Parker Solar Probe's Historic Achievement: A New Frontier in Solar Research"
+    }
+  ];
+
 </script>
 
 <svelte:head>
@@ -72,16 +104,28 @@
                 Featured Insights
             </p>
         </div>
-        <div class="grid grid-cols-4 gap-4 mt-12">
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/climate"><img src={ClimateImage} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> A Warming World: The Unfolding Crisis of Climate Change</div></a></div>
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/shifts"><img src={Article02} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Middle East: Transformations and Their Global Reverberations
-</div></a></div>
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/peace"><img src={Article03} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Global Conflicts: The Ongoing Struggle for Peace
-</div></a></div>
-            <div class="w-64 hover:underline hover:cursor-pointer shadow-2xl p-6 rounded-lg hover:scale-105 transition"><a href="/article/solar"><img src={Article04} alt="ArticleImage" class="w-64"> <div class="mt-4"><span class="font-bold">Article</span> Parker Solar Probe's Historic Achievement: A New Frontier in Solar Research
-</div></a></div>
-        </div>
-    </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+  {#each articles as { href, imgSrc, altText, category, title }}
+    <a 
+      href={href} 
+      class="group block bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform"
+    >
+      <img 
+        src={imgSrc} 
+        alt={altText} 
+        class="w-full h-40 object-cover"
+      />
+      <div class="p-4">
+        <span class="block text-sm font-semibold text-gray-500 uppercase mb-2">
+          {category}
+        </span>
+        <h3 class="text-lg font-bold text-gray-800 group-hover:text-red-600 transition-colors">
+          {title}
+        </h3>
+      </div>
+    </a>
+  {/each}
+</div>
     
     
     <div class="my-16 border-t-2"></div>
@@ -139,7 +183,7 @@
             <p class="text-3xl px-8 my-5 ">Partners of <span class="font-semibold">Solace Global</span></p>
             <p class="px-8 mt-7">How does the work of our partners come to life? How does that work create potential around the world? Watch, read, and experience the stories of good people doing great things that can lead to even greater things.</p>
             <!-- Button under Partners of Solace Global (learn more)-  Legacy Homes, Project World Impact,Undefined Robotics, pinkberry, hackclub, shanti bhavan, + info -->
-            <button class="mt-12 ml-8 transition border-2 border-black text-black py-3 px-9 rounded hover:text-white hover:bg-stone-800 hover:border-stone-800">Learn More</button>
+            <button class="mt-12 ml-8 transition border-2 border-black text-black py-3 px-9 rounded hover:text-white hover:bg-stone-800 hover:border-stone-800"><a href="/partners">Learn More</a></button>
         </div>
     </div>
     
@@ -154,7 +198,7 @@
         <p class="my-8 text-xs">Explore the latest updates, research, and stories from the foundation, Solace Global weekly updates newsletter.</p>
     
     <div class="grid grid-cols-5 gap-8">
-        <div class="col-span-3 hover:scale-105 transition  p-6 rounded-lg shadow-2xl shadow-white">
+        <div class="col-span-3 hover:scale-105 transition  p-6 rounded-lg shadow-2xl shadow-gray-800">
             <a href="/article/trap">
                 <img src={Article01} alt="Article" class="" >
                 <div class="mt-6">

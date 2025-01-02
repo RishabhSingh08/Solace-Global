@@ -138,6 +138,10 @@ function toggleIdeasDropdown() {
                 <h4 class="text-2xl  font-base"><a href="/work/career-compass" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Career Compass</a></h4>
                 <ul class="mt-2 space-y-2">
                     <li><a href="/work/career-compass/#engineering" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Engineering</a></li>
+                    <li><a href="/work/career-compass/#humanities" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Humanities</a></li>
+                    <li><a href="/work/career-compass/#business" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Business</a></li>
+                    <li><a href="/work/career-compass/#fine-arts" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Fine Arts</a></li>
+                    <li><a href="/work/career-compass/#natural-sciences" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Natural Sciences</a></li>
                 </ul>
             </div>
             <div>
@@ -149,13 +153,10 @@ function toggleIdeasDropdown() {
             <div>
                 <h4 class="text-2xl font-base"><a href="/work/discovery-project" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>The Discovery Project</a></h4>
                 <ul class="mt-2 space-y-2">
-                    <li><a href="/work/discovery-project/#robots" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Robots for Earth
-
-</a></li>
-                    <li><a href="/work/discovery-project/#seniors" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Smart Seniors
-</a></li>
+                    <li><a href="/work/discovery-project/#dreams" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>3D Dreams</a></li>
+                    <li><a href="/work/discovery-project/#robots" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Robots for Earth</a></li>
+                    <li><a href="/work/discovery-project/#seniors" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>Smart Senior</a></li>
                     <li><a href="/work/discovery-project/#spark" class=" text-gray-600 hover:underline" on:click={closeAllDropdowns}>STEM Spark</a></li>
-                    <li></li>
                 </ul>
             </div>
             <div>
